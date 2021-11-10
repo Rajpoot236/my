@@ -1,0 +1,100 @@
+.Container {
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: #105652;
+  padding: 10rem 0;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.bg {
+  display: block;
+  position: absolute;
+  bottom: 1000;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  transform: scaleX(1.5);
+  background-position: bottom left;
+}
+.detail {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  row-gap: 2rem;
+}
+.detail h2 {
+  font-weight: 500;
+  color: #fca738;
+}
+.name {
+  font-weight: 900;
+  font-size: 1.2em;
+}
+.detail p {
+  font-weight: 700;
+  color: #fbf3e4;
+  font-size: 1.5rem;
+}
+.hire span {
+  display: block;
+  font-weight: 500;
+  color: #fbf3e4;
+  margin-bottom: 0.5rem;
+}
+.hireMe {
+  background-color: yellowgreen;
+  padding: 2px;
+  color: #fbf3e4;
+  width: 40px;
+  height: 50px;
+  border-radius: 25px;
+}
+.btnGroup a {
+  text-decoration: none;
+  outline: none;
+}
+.btnGroup a + a {
+  margin-left: 2em;
+}
+.get {
+  height: 50px;
+  width: 50px;
+  color: white;
+  background-color: green;
+  border-radius: 25px;
+}
+
+.images {
+  flex: 0 0 20%;
+  display: flex;
+  align-items: center;
+}
+
+.images img {
+  max-width: 80%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 670px) {
+  .Container {
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 1rem;
+    height: 100vh;
+  }
+
+  .images {
+    justify-content: center;
+  }
+
+  .images img {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,50 @@
+.contact {
+  padding: 2rem 0 1rem;
+  text-align: center;
+}
+
+.contain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(350px, auto);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.deta {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: whitesmoke;
+  padding: 0.5rem;
+}
+
+.tit {
+  color: #105652;
+  align-self: flex-start;
+  font-size: 1.1em;
+}
+
+.connect {
+  padding: 0.5rem 2rem;
+  text-align: left;
+}
+
+.connect p {
+  line-height: 4;
+  color: #333333;
+}
+
+.connect i {
+  color: #858585;
+  margin-right: 0.2rem;
+}
+
+@media screen and (max-width: 670px) {
+  .contai {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1rem 0.3rem;
+  }
+}

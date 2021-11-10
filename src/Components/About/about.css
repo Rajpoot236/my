@@ -1,0 +1,35 @@
+.about {
+  width: 100%;
+  padding: 8rem 0 5rem;
+  display: flex;
+}
+h3 {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.4em;
+  position: relative;
+  color: #fca738;
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0.3rem 0 0.3rem rgba(0, 0, 0, 0.2),
+    0 0.3rem 0.3rem rgba(0, 0, 0, 0.1), 0 0 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+.aboutDetails {
+  line-height: 1.5;
+}
+
+.aboutDetails p {
+  text-align: justify;
+  margin-top: 1.2em;
+  color: #105652;
+  font-size: medium;
+}
